@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="main">
+    <div class="bck">
+      <div class="header">
+        <h1>Astrid</h1>
+      </div>
+      <div class="scroll imessage" id="scroller">
+        <%for(var i=0;i<question_chat.length;i++){ %>
+        <p class="question from-them" id="anchor">
+          <%=question_chat[i]%>
+        </p><br>
+
+        <p class="reply question from-me" id="anchor">
+          <%=reply_chat[i]%>
+        </p><br><br>
+
+        <% }%>
+      </div>
+
+      <form action="/" method="post">
+        <div class="send">
+          <input class="input" type="text" name="text" placeholder="Message" />
+        </div>
+        <div class="btn">
+          <button
+            class="shape"
+            type="submit"
+            onclick="myFunction()"
+            style="position: fixed"
+          >
+            <i class="fa fa-send-o"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script> 
+     var box=document.getElementById("scroller");
+  var name=box.scrollHeight;
+  box.scrollTo(0, name);
+ 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+.main {
+  background-color: rgb(223, 233, 233);
+}
+
+.bck {
+  background-image: url("images/bck2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 50px;
+  border-radius: 7px;
+  box-shadow: 5px 7px 8px #888888;
+  position: relative;
+}
+
+.header {
+  height: 60px;
+  background-color: #55d8c1;
+  width: 100%;
+  border-radius: 7px;
+}
+
+h1 {
+  color: white;
+  padding-top: 10px;
+  padding-left: 22px;
+}
+
+.scroll {
+  height: 275px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex-direction: column;
+  transition: background 0.3s ease-out 0.1s;
+  text-rendering: optimizeLegibility;
+  flex: 1 1 0;
+}
+
+.send {
+  background-color: #dfe9e9;
+  display: inline-block;
+  width: 400px;
+  position: absolute;
+
+  top: 85%;
+  border-radius: 50px;
+  left: 2%;
+  color: white;
+}
+
+input {
+  background-color: #dfe9e9;
+  border: 0;
+  height: 46px;
+  border-radius: 50px;
+  width: 400px;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.btn {
+  position: absolute;
+  left: 89%;
+  top: 86%;
+  display: inline-block;
+}
+
+.shape {
+  height: 45px;
+  border-radius: 50px;
+  background-color: #55d8c1;
+  border: 0px;
+  color: white;
+  font-size: 24px;
+  width: 45px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.question {
+  text-align: justify;
+  display: inline-block;
+
+  margin-left: 14px;
+  font-size: 20px;
+}
+
+.reply {
+  float: right;
+  margin-right: 16px !important;
+}
+
+<!--hello-- > .imessage {
+  background-color: #fff;
+  border: 1px solid #e5e5ea;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "SanFrancisco";
+  font-size: 1.25rem;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  padding: 0.5rem 1.5rem;
+}
+
+.imessage p {
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem 0.875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.imessage p::before,
+.imessage p::after {
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+
+p.from-me {
+  align-self: flex-end;
+  background-color: #55d8c1;
+  color: #fff;
+}
+
+p.from-me::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #55d8c1;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-me::after {
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+p[class^="from-"] {
+  margin: 0.5rem 0;
+  width: fit-content;
+}
+
+p.from-me ~ p.from-me {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:not(:last-child) {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:last-child {
+  margin-bottom: 0.5rem;
+}
+
+p.from-them {
+  align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+}
+
+p.from-them:before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #e5e5ea;
+  left: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+p.from-them::after {
+  background-color: #fff;
+  border-bottom-right-radius: 0.5rem;
+  left: 20px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+.no-tail::before {
+  display: none;
+}
+
+@font-face {
+  font-family: "SanFrancisco";
+  src: url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff2")
+      format("woff2"),
+    url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff")
+      format("woff");
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0 0.5rem;
+  }
+
+  .imessage {
+    font-size: 1.05rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    padding: 0.25rem 0.875rem;
+  }
+
+  .imessage p {
+    margin: 0.5rem 0;
+  }
+}
